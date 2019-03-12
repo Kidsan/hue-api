@@ -1,0 +1,14 @@
+{
+  "name": "basic-api",
+  "version": "1.0.0",
+  "description": "Basic express api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Kidsan",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
