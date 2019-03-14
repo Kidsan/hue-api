@@ -1,8 +1,15 @@
 'use strict';
 
 const express = require('express');
+const config = require("config");
+const mysql = require("promise-mysql");
+
+const appSettings = config.get("application");
+const dbConnectionOptions = config.get("database");
+
 const app = express();
-const port = 3000;
+const port = appSettings.port;
+const dbPool = mysql.createPool("dbConnectionOptions")
 
 app.get('/', (req, res) => res.send('Hello World!'));
 

@@ -9,6 +9,9 @@
   "author": "Kidsan",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.16.4"
+    "config": "^3.0.1",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "promise-mysql": "^3.3.1"
   }
 }
