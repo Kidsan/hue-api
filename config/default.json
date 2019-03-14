@@ -1,0 +1,11 @@
+{
+    "application": {
+        "port": 3000
+    },
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "toor",
+        "port": 3306
+    }
+}
