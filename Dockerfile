@@ -1,7 +1,7 @@
 FROM node:8-alpine as builder
 WORKDIR /usr/app
 COPY package*.json ./
-RUN npm install --production
+RUN npm install --only=production
 COPY . .
 
 FROM node:8-alpine as release
