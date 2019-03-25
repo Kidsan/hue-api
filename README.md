@@ -28,19 +28,15 @@ docker, docker-compose
 
 ## Running the tests
 
-```
-npm test //if running locally
+```bash
+npm test # if running locally
 OR
-make integration-test //if running in docker-compose
+make integration-test # if running in docker-compose
 ```
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+Running the integration tests either locally or in docker-compose will test the same functionality. Running in docker-compose is preffered as external dependencies will be available.
 
 ### And coding style tests
 
@@ -52,31 +48,31 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+There is a Kubernetes deployment file available with an example deployment. This is not exhaustive and is not optimised, but can be used as a baseline deployment.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Express](https://expressjs.com/) - The web framework used
+* [NodeJs](https://nodejs.org/en/) 
+* [Docker](https://www.docker.com/) - Containerisation
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](TODO) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](TODO). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Kieran O'Sullivan** - *Design and Implementation* - [kidsan](http://kidsan.com)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](TODO) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+UNLICENSED
 
 ## Acknowledgments
 
