@@ -1,16 +1,23 @@
-'use strict';
+
 
 const express = require('express');
-const config = require("config");
-const mysql = require("promise-mysql");
+const config = require('config');
 
-const appSettings = config.get("application");
-const dbConnectionOptions = config.get("database");
+const appSettings = config.get('application');
 
 const app = express();
-const port = appSettings.port;
-const dbPool = mysql.createPool("dbConnectionOptions")
+const { port } = appSettings;
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('Get Out'));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+process.on('SIGINT', () => {
+  console.log('SIGINT');
+  process.exit(0);
+});
+
+process.on('SIGTERM', () => {
+  console.log('SIGTERM');
+  process.exit(0);
+});
