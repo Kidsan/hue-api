@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: basicapi-deployment
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
         image: kidsan/basic-api
         ports:
         - containerPort: 3000
-        imagePullPolicy: Never
+        imagePullPolicy: Always
 ---
 kind: Service
 apiVersion: v1
@@ -25,5 +25,5 @@ spec:
     app: basicapi
   ports:
     - protocol: TCP
-      port: 3000
+      port: 80
   type: NodePort
