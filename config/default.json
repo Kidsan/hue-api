@@ -7,5 +7,6 @@
         "user": "root",
         "password": "toor",
         "port": 3306
-    }
+    },
+    "auth_secret": "some_secret"
 }

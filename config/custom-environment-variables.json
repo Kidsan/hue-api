@@ -7,5 +7,6 @@
         "user": "DATABASE_USER",
         "password": "DATABASE_PASSWORD",
         "port": "DATABASE_PORT"
-    }
+    },
+    "auth_secret": "AUTH_SECRET"
 }
