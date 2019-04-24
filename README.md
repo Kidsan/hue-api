@@ -1,6 +1,6 @@
-# Basic Api
+# BaHuesic Api
 
-This is just a basic nodejs REST API that can be used as a template for future applications. This API uses the express framework to handle requests.
+This is a basic nodejs REST API that can be used to control the philips hue bridge. This API uses the express framework to handle requests.
 
 ## Getting Started
 
