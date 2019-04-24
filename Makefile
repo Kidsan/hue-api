@@ -1,2 +1,2 @@
 build:
-	@docker build . -t kidsan/basic-api:latest
+	@docker build . -t kidsan/hue-api:latest

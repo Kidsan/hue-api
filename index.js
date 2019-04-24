@@ -14,7 +14,7 @@ const { port } = appSettings;
 app.get('/', (req, res) => res.send('Get Out'));
 app.use('/api/', routes);
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 process.on('SIGINT', () => {
   console.log('SIGINT');
